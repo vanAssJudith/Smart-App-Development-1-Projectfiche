@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
@@ -138,7 +129,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -150,15 +140,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
@@ -286,7 +267,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -298,15 +278,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
@@ -434,7 +405,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -446,15 +416,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
@@ -582,7 +543,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -595,44 +555,6 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/12.0.1": {
-      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.1",
-      "files": [
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.pdb",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.pdb",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.pdb",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.pdb",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.pdb",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.pdb",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.pdb",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
     "Xamarin.Forms/3.1.0.697729": {
       "sha512": "YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
       "type": "package",
@@ -802,11 +724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SAD\\Project\\Project\\Project.iOS\\Project.iOS.csproj",
+      "projectUniqueName": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.iOS\\Project.iOS.csproj",
       "projectName": "Project.iOS",
-      "projectPath": "C:\\SAD\\Project\\Project\\Project.iOS\\Project.iOS.csproj",
+      "projectPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.iOS\\Project.iOS.csproj",
       "packagesPath": "C:\\Users\\Judith van Ass\\.nuget\\packages\\",
-      "outputPath": "C:\\SAD\\Project\\Project\\Project.iOS\\obj\\",
+      "outputPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -823,8 +745,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\SAD\\Project\\Project\\Project\\Project.csproj": {
-              "projectPath": "C:\\SAD\\Project\\Project\\Project\\Project.csproj"
+            "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project\\Project.csproj": {
+              "projectPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project\\Project.csproj"
             }
           }
         }

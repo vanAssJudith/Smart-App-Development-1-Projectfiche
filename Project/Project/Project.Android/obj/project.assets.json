@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -354,7 +345,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -367,44 +357,6 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/12.0.1": {
-      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.1",
-      "files": [
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.pdb",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.pdb",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.pdb",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.pdb",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.pdb",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.pdb",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.pdb",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
       "sha512": "GIz8xfnOLJH5yWC0ocIR80hJlYQ2Lz2HQKjW2/vi0rxYXR6nF/D4aOFlTx1PIA6A9FLgFRrajSJyCfx460qycw==",
       "type": "package",
@@ -834,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SAD\\Project\\Project\\Project.Android\\Project.Android.csproj",
+      "projectUniqueName": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.Android\\Project.Android.csproj",
       "projectName": "Project.Android",
-      "projectPath": "C:\\SAD\\Project\\Project\\Project.Android\\Project.Android.csproj",
+      "projectPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.Android\\Project.Android.csproj",
       "packagesPath": "C:\\Users\\Judith van Ass\\.nuget\\packages\\",
-      "outputPath": "C:\\SAD\\Project\\Project\\Project.Android\\obj\\",
+      "outputPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -855,8 +807,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\SAD\\Project\\Project\\Project\\Project.csproj": {
-              "projectPath": "C:\\SAD\\Project\\Project\\Project\\Project.csproj"
+            "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project\\Project.csproj": {
+              "projectPath": "C:\\SAD\\Smart-App-Development-1-Projectfiche\\Project\\Project\\Project\\Project.csproj"
             }
           }
         }

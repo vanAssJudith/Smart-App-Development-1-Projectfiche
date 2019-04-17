@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F6F68CAF-E299-4549-8267-7BD48CF30567}</ProjectGuid>
+    <ProjectGuid>{5C865F50-8DB5-4062-8859-8579458583C1}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Project\Project.csproj">
-      <Project>{2FFDF936-3356-49C5-9D5D-84F1BC0D463B}</Project>
+      <Project>{C46CD79F-CAFB-436C-B8B8-53A2F645F4BB}</Project>
       <Name>Project</Name>
     </ProjectReference>
   </ItemGroup>
