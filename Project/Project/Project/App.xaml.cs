@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Ioc;
+using OnBoardingOefening.Services;
+using Project.ViewModels;
+using Project.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,11 +11,30 @@ namespace Project
 {
     public partial class App : Application
     {
+        private static ServiceLocator _locator;
+        public static ServiceLocator Locator
+        {
+            get
+            {
+                return _locator ?? (_locator = new ServiceLocator());
+            }
+
+        }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            // Setup Nav service
+            var nav = new NavigationService();
+            nav.Configure(ServiceLocator.Mainpage, typeof(MainPage));
+            nav.Configure(ServiceLocator.LoginPage, typeof(LoginPage));
+
+            SimpleIoc.Default.Register<ICustomNavigation>(() => nav);
+
+            var mainPage = new NavigationPage(new MainPage());
+            nav.Initialize(mainPage);
+            MainPage = mainPage;
         }
 
         protected override void OnStart()
