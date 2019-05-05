@@ -3,8 +3,13 @@ C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\bin\Debug\ne
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\bin\Debug\netstandard2.0\Project.pdb
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.csprojAssemblyReference.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\BestRatedMoviesPage.xaml.g.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\InfoPage.xaml.g.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\LatestMoviesPage.xaml.g.cs
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\PopularMoviesPage.xaml.g.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Views\SearchPage.xaml.g.cs
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.csproj.CoreCompileInputs.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfoInputs.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfo.cs

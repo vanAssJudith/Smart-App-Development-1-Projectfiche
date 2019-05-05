@@ -7,13 +7,16 @@ using Xamarin.Forms;
 
 namespace Project.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
             InitializeComponent();
 
+            ////zorgt er voor dat de master page zichtbaar is
+            //this.IsPresented = true;
             BindingContext = App.Locator.MainPageViewModel;
+
         }
     }
 }

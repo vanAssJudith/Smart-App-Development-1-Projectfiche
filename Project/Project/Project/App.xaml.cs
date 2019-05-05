@@ -1,5 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
-using OnBoardingOefening.Services;
+using Project.Services;
 using Project.ViewModels;
 using Project.Views;
 using System;
@@ -29,6 +29,11 @@ namespace Project
             var nav = new NavigationService();
             nav.Configure(ServiceLocator.Mainpage, typeof(MainPage));
             nav.Configure(ServiceLocator.LoginPage, typeof(LoginPage));
+            nav.Configure(ServiceLocator.PopularMoviesPage, typeof(PopularMoviesPage));
+            nav.Configure(ServiceLocator.PopularMoviesPage, typeof(BestRatedMoviesPage));
+            nav.Configure(ServiceLocator.PopularMoviesPage, typeof(LatestMoviesPage));
+            nav.Configure(ServiceLocator.InfoPage, typeof(InfoPage));
+            nav.Configure(ServiceLocator.SearchPage, typeof(SearchPage));
 
             SimpleIoc.Default.Register<ICustomNavigation>(() => nav);
 

@@ -7,6 +7,5 @@ namespace Project.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-
     }
 }

@@ -8,20 +8,19 @@ namespace Project.Models
 {
     public class Movie
     {
-        public int vote_count { get; set; }
-        public int id { get; set; }
-        public bool video { get; set; }
-        public float vote_average { get; set; }
-        public string title { get; set; }
-        public float popularity { get; set; }
-        public string poster_path { get; set; }
-        public string original_language { get; set; }
-        public string original_title { get; set; }
-        public int[] genre_ids { get; set; }
-        public string backdrop_path { get; set; }
-        public bool adult { get; set; }
-        public string overview { get; set; }
-        public string release_date { get; set; }
+        //props
+        [Key]
+        public int Id { get; set; }
+        public string Title { get; set; }
+        [JsonProperty(propertyName: "vote_average")]
+        public float VoteAverage { get; set; }
+        [JsonProperty(propertyName: "poster_path")]
+        public string PosterPath { get; set; }
+        [JsonProperty(propertyName: "release_date")]
+        public string ReleaseDate { get; set; }
     }
+
+
+
 }
 

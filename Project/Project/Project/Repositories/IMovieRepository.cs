@@ -6,6 +6,8 @@ namespace Project.Repositories
 {
     public interface IMovieRepository
     {
-        Task<Movie> GetMovies();
+        Task<List<Movie>> GetBestRatedMovies();
+        Task<List<Movie>> GetPopularMovies();
+        Task<List<Movie>> GetLatestMovies();
     }
 }

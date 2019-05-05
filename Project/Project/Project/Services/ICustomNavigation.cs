@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace OnBoardingOefening.Services
+namespace Project.Services
 {
     public interface ICustomNavigation
     {

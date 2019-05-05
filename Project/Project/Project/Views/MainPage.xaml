@@ -1,18 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Project"
-             x:Class="Project.Views.MainPage">
+                  xmlns:view="clr-namespace:Project.Views"
+                  xmlns:local="clr-namespace:Project.Models"
+                  x:Class="Project.Views.MainPage"
+                  NavigationPage.HasNavigationBar="false">
 
-    <StackLayout>
-        <ListView ItemsSource="{Binding Movies}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding total_pages}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ContentPage.Content>
+                <StackLayout>
+                    <ListView x:Name="listView" x:FieldModifier="public">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type local:Profile}">
+                                <local:Profile Title="Home" IconSource="home.png" TargetType="{x:Type view:PopularMoviesPage}" />
+                                <local:Profile Title="Wish List" IconSource="toWatch.png" />
+                                <local:Profile Title="Watched" IconSource="eye.png" />
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="5,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding IconSource}" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage x:Name="NavPage">
+            <x:Arguments>
+                <view:PopularMoviesPage x:Name="PopularMoviesPage"/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
 
-        </ListView>
-    </StackLayout>
-
-</ContentPage>
+</MasterDetailPage>
