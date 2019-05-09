@@ -28,7 +28,7 @@
                     </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
-            <ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent">
+            <ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent" SelectedItem="{Binding SelectedMovie}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -45,7 +45,7 @@
                                     </Grid.RowDefinitions>
                                     <Image Grid.RowSpan="2" Aspect="AspectFill" VerticalOptions="FillAndExpand" Source="{Binding PosterPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" />
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Grid.Column="1">
-                                        <Label HorizontalTextAlignment="Start" Text="{Binding Title}" TextColor="Black" VerticalOptions="Center" FontSize="16" />
+                                        <Label HorizontalTextAlignment="Start" Text="{Binding Title}" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal" Grid.Row="1" Spacing="0" Grid.Column="1">
                                         <Label Text="{Binding VoteAverage}" FontAttributes="Bold" TextColor="Gray"></Label>

@@ -16,8 +16,14 @@ namespace Project.Models
         public float VoteAverage { get; set; }
         [JsonProperty(propertyName: "poster_path")]
         public string PosterPath { get; set; }
+        [JsonProperty(propertyName: "backdrop_path")]
+        public string BackdropPath { get; set; }
         [JsonProperty(propertyName: "release_date")]
         public string ReleaseDate { get; set; }
+        [JsonProperty(PropertyName = "video")]
+        public bool Video { get; set; }
+        [JsonProperty(PropertyName = "overview")]
+        public string Overview { get; set; }
     }
 
 

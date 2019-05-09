@@ -13,6 +13,6 @@ C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\ne
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.csproj.CoreCompileInputs.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfoInputs.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfo.cs
-C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\XamlC.stamp
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.dll
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\Project.pdb
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project\Project\obj\Debug\netstandard2.0\XamlC.stamp

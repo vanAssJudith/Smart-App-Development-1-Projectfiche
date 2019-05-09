@@ -22,6 +22,7 @@ namespace Project.ViewModels
         public ServiceLocator()
         {
             SimpleIoc.Default.Register<IMovieRepository, MovieRepository>();
+            SimpleIoc.Default.Register<IShareRepository, ShareRepository>();
             SimpleIoc.Default.Register<ILocalDatabaseRepository, LocalDatabaseRepository>();
             SimpleIoc.Default.Register<IMovieAppService, MovieAppService>();
 

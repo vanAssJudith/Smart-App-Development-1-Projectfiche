@@ -1,5 +1,3 @@
-Project
-System.Runtime
 Flurl
 Flurl.Http
 FormsViewGroup
@@ -24,6 +22,7 @@ Microsoft.Extensions.Logging
 Microsoft.Extensions.Options
 Microsoft.Extensions.Primitives
 Newtonsoft.Json
+Project
 Remotion.Linq
 SQLitePCLRaw.batteries_green
 SQLitePCLRaw.batteries_v2
@@ -36,6 +35,7 @@ System.Diagnostics.DiagnosticSource
 System.Interactive.Async
 System.Memory
 System.Runtime.CompilerServices.Unsafe
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -44,6 +44,7 @@ Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat
 Xamarin.Android.Support.Core.UI
 Xamarin.Android.Support.Core.Utils
+Xamarin.Android.Support.CustomTabs
 Xamarin.Android.Support.Design
 Xamarin.Android.Support.Fragment
 Xamarin.Android.Support.Media.Compat
@@ -55,6 +56,7 @@ Xamarin.Android.Support.v7.MediaRouter
 Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Essentials
 Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform

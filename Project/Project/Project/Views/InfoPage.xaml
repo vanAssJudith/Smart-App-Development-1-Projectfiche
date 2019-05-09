@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Project.Views.InfoPage">
+             x:Class="Project.Views.InfoPage"
+             Title="{Binding SelectedMovie.Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="share.png" Command="{Binding Share}"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <!--Restaurant Details-->
+                <Image Source="{Binding SelectedMovie.BackdropPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" />
+                <Label Text="{Binding SelectedMovie.Title}" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="{Binding SelectedMovie.Overview}" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="{Binding SelectedMovie.Rating}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

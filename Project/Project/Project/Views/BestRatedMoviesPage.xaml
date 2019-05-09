@@ -22,7 +22,7 @@
                     </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
-            <ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent">
+            <ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent" SelectedItem="{Binding SelectedMovie}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

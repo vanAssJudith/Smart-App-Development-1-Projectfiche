@@ -25,6 +25,7 @@ namespace Project.ViewModels
             Movies = await _appService.GetLatestMovies();
         }
 
+
         private List<Movie> _movies;
         public List<Movie> Movies
         {
@@ -33,6 +34,39 @@ namespace Project.ViewModels
             {
                 _movies = value;
                 RaisePropertyChanged(() => Movies);
+            }
+        }
+
+        private Movie _selectedMovie;
+        public Movie SelectedMovie
+        {
+            get { return _selectedMovie; }
+            set
+            {
+                _selectedMovie = value;
+                RaisePropertyChanged(() => SelectedMovie);
+                if (_selectedMovie != null)
+                {
+                    try
+                    {
+                        NavigateToDetails();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+
+
+            }
+        }
+
+
+        public void NavigateToDetails()
+        {
+            if (SelectedMovie != null)
+            {
+                _navigation.NavigateTo(ServiceLocator.InfoPage, SelectedMovie);
             }
         }
     }

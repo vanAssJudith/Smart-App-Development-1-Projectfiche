@@ -9,11 +9,13 @@ namespace Project.Services
 {
     public class MovieAppService : IMovieAppService
     {
+        private readonly IShareRepository _shareRepository;
         private readonly IMovieRepository _movieRepository;
-        public MovieAppService(IMovieRepository movieRepository)
+        public MovieAppService(IMovieRepository movieRepository, IShareRepository shareRepository)
         {
             _movieRepository = movieRepository;
             //_localDatabaseRepository = localDatabaseRepository;
+            _shareRepository = shareRepository;
         }
 
         public async Task<List<Movie>> GetPopularMovies()
@@ -31,5 +33,9 @@ namespace Project.Services
             return await _movieRepository.GetLatestMovies();
         }
         
+        public void ShareContent(string Title)
+        {
+            _shareRepository.ShareText(Title);
+        }
     }
 }
