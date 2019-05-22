@@ -57,8 +57,8 @@ namespace Project.ViewModels
                         throw ex;
                     }
                 }
-                
-                
+
+
             }
         }
 
@@ -78,6 +78,28 @@ namespace Project.ViewModels
                 return new RelayCommand(() =>
                 {
                     _navigation.NavigateTo(ServiceLocator.SearchPage);
+                });
+            }
+        }
+
+        public RelayCommand AddWatched
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    
+                });
+            }
+        }
+
+        public RelayCommand AddWishlist
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    
                 });
             }
         }

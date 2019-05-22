@@ -14,8 +14,8 @@
                         <ListView.ItemsSource>
                             <x:Array Type="{x:Type local:Profile}">
                                 <local:Profile Title="Home" IconSource="home.png" TargetType="{x:Type view:PopularMoviesPage}" />
-                                <local:Profile Title="Wish List" IconSource="toWatch.png" />
-                                <local:Profile Title="Watched" IconSource="eye.png" />
+                                <local:Profile Title="Wish List" IconSource="toWatch.png" TargetType="{x:Type view:WishlistPage}"/>
+                                <local:Profile Title="Watched" IconSource="eye.png" TargetType="{x:Type view:WatchedPage}"/>
                             </x:Array>
                         </ListView.ItemsSource>
                         <ListView.ItemTemplate>

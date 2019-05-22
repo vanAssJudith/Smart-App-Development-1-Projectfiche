@@ -1,0 +1,14 @@
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.Tests.deps.json
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.Tests.runtimeconfig.json
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.Tests.runtimeconfig.dev.json
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.Tests.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.pdb
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.csprojAssemblyReference.cache
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.csproj.CoreCompileInputs.cache
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.AssemblyInfoInputs.cache
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.AssemblyInfo.cs
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.csproj.CopyComplete

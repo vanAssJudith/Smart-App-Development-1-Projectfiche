@@ -10,7 +10,7 @@ namespace Project.Models
     {
         //props
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Title { get; set; }
         [JsonProperty(propertyName: "vote_average")]
         public float VoteAverage { get; set; }

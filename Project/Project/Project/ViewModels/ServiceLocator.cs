@@ -17,12 +17,15 @@ namespace Project.ViewModels
         public const string LatestMoviesPage = "LatestMoviesPage";
         public const string InfoPage = "InfoPage";
         public const string SearchPage = "SearchPage";
+        public const string WatchedPage = "WatchedPage";
+        public const string WishlistPage = "WishlistPage";
+
 
 
         public ServiceLocator()
         {
-            SimpleIoc.Default.Register<IMovieRepository, MovieRepository>();
-            SimpleIoc.Default.Register<IShareRepository, ShareRepository>();
+            SimpleIoc.Default.Register<IMovieRepository, MovieRepository>(); 
+            SimpleIoc.Default.Register<IXamarinEssentialsRepository, XamarinEssentialsRepository>();
             SimpleIoc.Default.Register<ILocalDatabaseRepository, LocalDatabaseRepository>();
             SimpleIoc.Default.Register<IMovieAppService, MovieAppService>();
 
@@ -33,6 +36,8 @@ namespace Project.ViewModels
             SimpleIoc.Default.Register<LatestMoviesPageViewModel>();
             SimpleIoc.Default.Register<InfoPageViewModel>();
             SimpleIoc.Default.Register<SearchPageViewModel>();
+            SimpleIoc.Default.Register<WatchedPageViewModel>();
+            SimpleIoc.Default.Register<WishlistPageViewModel>();
 
 
 
@@ -66,6 +71,13 @@ namespace Project.ViewModels
         {
             get { return SimpleIoc.Default.GetInstance<SearchPageViewModel>(); }
         }
-
+        public WatchedPageViewModel WatchedPageViewModel
+        {
+            get { return SimpleIoc.Default.GetInstance<WatchedPageViewModel>(); }
+        }
+        public WishlistPageViewModel WishlistPageViewModel
+        {
+            get { return SimpleIoc.Default.GetInstance<WishlistPageViewModel>(); }
+        }
     }
 }

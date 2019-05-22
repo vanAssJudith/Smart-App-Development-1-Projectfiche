@@ -1,4 +1,5 @@
-﻿using Project.Models;
+﻿using Herhalingsoefening.Repositories;
+using Project.Models;
 using Project.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,12 +10,13 @@ namespace Project.Services
 {
     public class MovieAppService : IMovieAppService
     {
-        private readonly IShareRepository _shareRepository;
+        private readonly IXamarinEssentialsRepository _shareRepository;
         private readonly IMovieRepository _movieRepository;
-        public MovieAppService(IMovieRepository movieRepository, IShareRepository shareRepository)
+        private readonly ILocalDatabaseRepository _localDatabaseRepository;
+        public MovieAppService(IMovieRepository movieRepository, IXamarinEssentialsRepository shareRepository, ILocalDatabaseRepository localDatabaseRepository)
         {
             _movieRepository = movieRepository;
-            //_localDatabaseRepository = localDatabaseRepository;
+            _localDatabaseRepository = localDatabaseRepository;
             _shareRepository = shareRepository;
         }
 
@@ -37,5 +39,12 @@ namespace Project.Services
         {
             _shareRepository.ShareText(Title);
         }
+
+        public async Task<List<Video>> GetVideos(string movieId)
+        {
+            return await _movieRepository.GetVideos(movieId);
+        }
+
+
     }
 }

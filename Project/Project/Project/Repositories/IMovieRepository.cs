@@ -9,5 +9,6 @@ namespace Project.Repositories
         Task<List<Movie>> GetBestRatedMovies();
         Task<List<Movie>> GetPopularMovies();
         Task<List<Movie>> GetLatestMovies();
+        Task<List<Video>> GetVideos(string movieId);
     }
 }

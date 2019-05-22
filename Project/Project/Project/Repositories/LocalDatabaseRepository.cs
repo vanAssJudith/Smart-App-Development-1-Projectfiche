@@ -1,5 +1,6 @@
 ﻿using Flurl.Http;
 using Herhalingsoefening.Context;
+using Microsoft.EntityFrameworkCore;
 using Project.Models;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,14 @@ namespace Herhalingsoefening.Repositories
 {
     public class LocalDatabaseRepository : ILocalDatabaseRepository
     {
-        private string Path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "watched.db");
+        private readonly string Path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "movies.db");
+        
         public LocalDatabaseRepository()
         {
             Setup();
         }
-
-        public void Setup()
+        
+        private void Setup()
         {
             try
             {
@@ -31,31 +33,31 @@ namespace Herhalingsoefening.Repositories
             }
         }
 
-        public Task<List<Movie>> GetWatched()
+        public async Task<IEnumerable<Movie>> GetWatchedMovies()
         {
-            try
+            using (var db = new DatabaseContext(Path))
             {
-                var result = Path.GetJsonAsync<List<Movie>>();
-                return result;
-            }
-
-            catch (Exception ex)
-            {
-                throw ex;
+                return await db.Movies.ToListAsync();
             }
         }
 
-        //public List<int> AddWatched()
-        //{
-        //    try
-        //    {
 
-        //    }
+        public async Task PostMoviesAsync(Movie Movie)
+        {
+            using (var db = new DatabaseContext(Path))
+            {
+                try
+                {
+                    await db.Movies.AddAsync(Movie);
+                    await db.SaveChangesAsync();
 
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+
+            }
+        }
     }
 }

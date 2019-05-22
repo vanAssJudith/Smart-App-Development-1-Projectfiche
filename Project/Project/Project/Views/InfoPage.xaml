@@ -13,7 +13,8 @@
                 <Image Source="{Binding SelectedMovie.BackdropPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" />
                 <Label Text="{Binding SelectedMovie.Title}" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="{Binding SelectedMovie.Overview}" HorizontalOptions="CenterAndExpand"/>
-                <Label Text="{Binding SelectedMovie.Rating}" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="{Binding SelectedMovie.VoteAverage}" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="Bekijk de trailer" Command="{Binding WatchVideo}"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

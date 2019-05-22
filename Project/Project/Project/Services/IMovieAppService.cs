@@ -9,6 +9,7 @@ namespace Project.Services
         Task<List<Movie>> GetBestRatedMovies();
         Task<List<Movie>> GetLatestMovies();
         Task<List<Movie>> GetPopularMovies();
+        Task<List<Video>> GetVideos(string movieId);
         void ShareContent(string Title);
     }
 }

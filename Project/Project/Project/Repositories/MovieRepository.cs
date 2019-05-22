@@ -2,8 +2,10 @@
 using Project.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Project.Repositories
 {
@@ -17,7 +19,7 @@ namespace Project.Repositories
         {
             try
             {
-                var result = await $"{ENDPOINT}movie/popular?api_key={APIKEY}&language=nl-NL".GetJsonAsync<Result>();
+                var result = await $"{ENDPOINT}movie/popular?api_key={APIKEY}&language=en-US".GetJsonAsync<Result>();
                 return result.Movies;
             }
             catch (FlurlHttpException ex)
@@ -35,7 +37,7 @@ namespace Project.Repositories
         {
             try
             {
-                var result = await $"{ENDPOINT}movie/top_rated?api_key={APIKEY}&language=nl-NL".GetJsonAsync<Result>();
+                var result = await $"{ENDPOINT}movie/top_rated?api_key={APIKEY}&language=en-US".GetJsonAsync<Result>();
                 return result.Movies;
             }
             catch (FlurlHttpException ex)
@@ -53,7 +55,7 @@ namespace Project.Repositories
         {
             try
             {
-                var result = await $"{ENDPOINT}movie/upcoming?api_key={APIKEY}&language=nl-NL".GetJsonAsync<Result>();
+                var result = await $"{ENDPOINT}movie/upcoming?api_key={APIKEY}&language=en-US".GetJsonAsync<Result>();
                 return result.Movies;
             }
             catch (FlurlHttpException ex)
@@ -71,7 +73,7 @@ namespace Project.Repositories
         {
             try
             {
-                var result = await $"{ENDPOINT}search/movie?api_key={APIKEY}&query={searchTerm}&page={page}&language=nl-NL".GetJsonAsync<Result>();
+                var result = await $"{ENDPOINT}search/movie?api_key={APIKEY}&query={searchTerm}&page={page}&language=en-US".GetJsonAsync<Result>();
                 return result.Movies;
             }
             catch (FlurlHttpException ex)
@@ -84,5 +86,42 @@ namespace Project.Repositories
                 throw ex;
             }
         }
+
+        public async Task<List<Video>> GetVideos(string movieId)
+        {
+            try
+            {
+                VideoResult result = await $"{ENDPOINT}movie/{movieId}/videos?api_key={APIKEY}".GetJsonAsync<VideoResult>();
+                List<Video> videos = result.Videos.Where(v => v.Site == "YouTube" && v.Type == "Trailer").ToList();
+                return videos;
+
+                //return result.Videos;
+            }
+            catch (FlurlHttpException ex)
+            {
+                throw ex;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task PostRatingAsync(string movieId, Profile rating)
+        {
+            try
+            {
+                System.Net.Http.HttpResponseMessage response = await $"{ENDPOINT}/movie/{movieId}/rating".PostJsonAsync(rating);
+
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException("Kan data momenteel niet posten, probeer later opnieuw");
+            }
+        }
+
     }
+
 }
+

@@ -6,7 +6,7 @@ namespace Herhalingsoefening.Repositories
 {
     public interface ILocalDatabaseRepository
     {
-        Task<List<Movie>> GetWatched();
-        void Setup();
+        Task<IEnumerable<Movie>> GetWatchedMovies();
+        Task PostMoviesAsync(Movie Movie);
     }
 }
