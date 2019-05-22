@@ -63,7 +63,6 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
 System.ComponentModel.Annotations
-System.Text.Encoding.CodePages
 System.AppContext
 System.Runtime.Extensions
 System.IO.FileSystem

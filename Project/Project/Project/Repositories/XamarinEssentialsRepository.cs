@@ -9,11 +9,11 @@ namespace Project.Repositories
 {
     public class XamarinEssentialsRepository : IXamarinEssentialsRepository
     {
-        public async Task ShareText(string text)
+        public async Task ShareUrl(string url)
         {
             await Share.RequestAsync(new ShareTextRequest
             {
-                Text = text,
+                Text = url,
                 Title = "Share Text"
             });
         }
@@ -21,30 +21,6 @@ namespace Project.Repositories
         public async Task OpenBrowser(string uri)
         {
             await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
-        }
-
-        public void SetPreference()
-        {
-            try
-            {
-                Preferences.Set("id", "1");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool GetPreference()
-        {
-            try
-            {
-                return Preferences.Get("id", false);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
         }
     }
 }

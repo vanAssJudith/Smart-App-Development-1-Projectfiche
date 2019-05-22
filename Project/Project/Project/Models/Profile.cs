@@ -10,5 +10,6 @@ namespace Project.Models
         public string IconSource { get; set; }
         public Type TargetType { get; set; }
         public float Rating { get; set; }
+
     }
 }

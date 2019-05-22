@@ -1,39 +1,61 @@
-﻿using GalaSoft.MvvmLight;
-using Project.Models;
-using Project.Services;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using GalaSoft.MvvmLight;
+//using GalaSoft.MvvmLight.Command;
+//using Herhalingsoefening.Repositories;
+//using Project.Models;
+//using Project.Services;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace Project.ViewModels
-{
-    public class WatchedPageViewModel : ViewModelBase
-    {
-        private readonly IMovieAppService _appService;
-        private ICustomNavigation _navigation;
+//namespace Project.ViewModels
+//{
+//    public class WatchedPageViewModel : ViewModelBase
+//    {
+//        private readonly ILocalDatabaseRepository _localDatabase;
+//        private ICustomNavigation _navigation;
 
-        public WatchedPageViewModel(IMovieAppService appService, ICustomNavigation navigation)
-        {
-            _appService = appService;
-            LoadData().GetAwaiter();
-            _navigation = navigation;
-        }
+//        public WatchedPageViewModel(ILocalDatabaseRepository localDatabase, ICustomNavigation navigation)
+//        {
 
-        public async Task LoadData()
-        {
-            Movies = await _appService.GetPopularMovies();
-        }
+//            _localDatabase = localDatabase;
+//            LoadData().GetAwaiter();
+//            _navigation = navigation;
+//        }
 
-        private List<Movie> _movies;
-        public List<Movie> Movies
-        {
-            get { return _movies; }
-            set
-            {
-                _movies = value;
-                RaisePropertyChanged(() => Movies);
-            }
-        }
-    }
-}
+//        public async Task LoadData()
+//        {
+//            IEnumerable<Movie> movies = await _localDatabase.GetWatchedMovies();
+//            Movies = movies.ToList();
+
+
+
+             
+//        }
+
+//        private List<Movie> _movies;
+//        public List<Movie> Movies
+//        {
+//            get { return _movies; }
+//            set
+//            {
+//                _movies = value;
+//                RaisePropertyChanged(() => Movies);
+//            }
+//        }
+        
+//        public RelayCommand<Movie> RemoveWatched
+//        {
+//            get
+//            {
+//                return new RelayCommand<Movie>(async (movie) =>
+//                {
+
+//                    await _localDatabase.DeleteWatchedMovieAsync(movie);
+                  
+//                });
+//            }
+//        }
+//    }
+//}

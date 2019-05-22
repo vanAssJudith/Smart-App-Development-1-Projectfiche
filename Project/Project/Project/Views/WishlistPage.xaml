@@ -4,9 +4,32 @@
              x:Class="Project.Views.WishlistPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="MovieList" ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="WhiteSmoke" Margin="6" Padding="6,0">
+                                <Grid x:Name="Movie">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="20"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Grid.RowSpan="2" Aspect="AspectFill" VerticalOptions="FillAndExpand" Source="{Binding PosterPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" />
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Grid.Column="1">
+                                        <Label HorizontalTextAlignment="Start" Text="{Binding Title}" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
+                                    </StackLayout>
+                                    <ImageButton CommandParameter="{Binding Source={x:Reference Movie}, Path=BindingContext}" BindingContext="{Binding Source={x:Reference MovieList}, Path=BindingContext}" Command="{Binding RemoveWishlist}"  Grid.Column="2" Source="delete.png" BackgroundColor="Transparent"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

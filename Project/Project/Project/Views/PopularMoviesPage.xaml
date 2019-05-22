@@ -5,9 +5,9 @@
             x:Class="Project.Views.PopularMoviesPage"
             Title="Movies">
 
-    <TabbedPage.ToolbarItems>
+    <!--<TabbedPage.ToolbarItems>
         <ToolbarItem Name="search" Icon="search.png" Command="{Binding SearchPage}"/>
-    </TabbedPage.ToolbarItems>
+    </TabbedPage.ToolbarItems>-->
     <ContentPage Title="Most Popular">
         <StackLayout VerticalOptions="FillAndExpand">
             <StackLayout.Resources>
@@ -28,16 +28,16 @@
                     </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
-            <ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent" SelectedItem="{Binding SelectedMovie}">
+            <ListView x:Name="MovieList"  ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent" SelectedItem="{Binding SelectedMovie}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame BackgroundColor="WhiteSmoke" Margin="6" Padding="6,0">
-                                <Grid>
+                                <Grid x:Name="Movie">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="75"/>
+                                        <ColumnDefinition Width="100"/>
                                         <ColumnDefinition Width="200"/>
-                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="20"/>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="50"/>
@@ -50,14 +50,15 @@
                                     <StackLayout Orientation="Horizontal" Grid.Row="1" Spacing="0" Grid.Column="1">
                                         <Label Text="{Binding VoteAverage}" FontAttributes="Bold" TextColor="Gray"></Label>
                                     </StackLayout>
-                                    <Button Command="{Binding AddWatched}" Grid.Column="2" Image="eye.png" BackgroundColor="Transparent"/>
-                                    <Button Command="{Binding AddWishlist}" Grid.Column="2" Grid.Row="1" Image="toWatch.png" BackgroundColor="Transparent"></Button>
+                                    <!--<ImageButton CommandParameter="{Binding Source={x:Reference Movie}, Path=BindingContext}" BindingContext="{Binding Source={x:Reference MovieList}, Path=BindingContext}" Command="{Binding AddWatched}"  Grid.Column="2" Source="eye.png" BackgroundColor="Transparent"/>-->
+                                    <ImageButton CommandParameter="{Binding Source={x:Reference Movie}, Path=BindingContext}" BindingContext="{Binding Source={x:Reference MovieList}, Path=BindingContext}" Command="{Binding AddWishlist}" Grid.Column="2" Grid.Row="1" Source="toWatch.png" BackgroundColor="Transparent"></ImageButton>
                                 </Grid>
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+        
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Top Rated">

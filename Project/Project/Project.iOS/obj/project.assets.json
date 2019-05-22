@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Flurl/2.8.1": {
+      "Flurl/2.8.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Flurl.dll": {}
@@ -11,12 +11,12 @@
           "lib/netstandard2.0/Flurl.dll": {}
         }
       },
-      "Flurl.Http/2.4.1": {
+      "Flurl.Http/2.4.2": {
         "type": "package",
         "dependencies": {
-          "Flurl": "2.8.1",
-          "Newtonsoft.Json": "11.0.2",
-          "System.Text.Encoding.CodePages": "4.4.0"
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Flurl.Http.dll": {}
@@ -289,7 +289,7 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -528,7 +528,7 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.1": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -685,11 +685,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Flurl.Http": "2.4.1",
+          "Flurl.Http": "2.4.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.4",
           "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "4.0.0.425677"
         },
         "compile": {
           "bin/placeholder/Project.dll": {}
@@ -700,7 +700,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Flurl/2.8.1": {
+      "Flurl/2.8.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Flurl.dll": {}
@@ -709,12 +709,12 @@
           "lib/netstandard2.0/Flurl.dll": {}
         }
       },
-      "Flurl.Http/2.4.1": {
+      "Flurl.Http/2.4.2": {
         "type": "package",
         "dependencies": {
-          "Flurl": "2.8.1",
-          "Newtonsoft.Json": "11.0.2",
-          "System.Text.Encoding.CodePages": "4.4.0"
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Flurl.Http.dll": {}
@@ -987,7 +987,7 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1216,7 +1216,7 @@
           "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.1": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -1367,11 +1367,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Flurl.Http": "2.4.1",
+          "Flurl.Http": "2.4.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.4",
           "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "4.0.0.425677"
         },
         "compile": {
           "bin/placeholder/Project.dll": {}
@@ -1382,7 +1382,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Flurl/2.8.1": {
+      "Flurl/2.8.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Flurl.dll": {}
@@ -1391,12 +1391,12 @@
           "lib/netstandard2.0/Flurl.dll": {}
         }
       },
-      "Flurl.Http/2.4.1": {
+      "Flurl.Http/2.4.2": {
         "type": "package",
         "dependencies": {
-          "Flurl": "2.8.1",
-          "Newtonsoft.Json": "11.0.2",
-          "System.Text.Encoding.CodePages": "4.4.0"
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Flurl.Http.dll": {}
@@ -1669,7 +1669,7 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1898,7 +1898,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.1": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -2049,11 +2049,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Flurl.Http": "2.4.1",
+          "Flurl.Http": "2.4.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.4",
           "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "4.0.0.425677"
         },
         "compile": {
           "bin/placeholder/Project.dll": {}
@@ -2064,7 +2064,7 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Flurl/2.8.1": {
+      "Flurl/2.8.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Flurl.dll": {}
@@ -2073,12 +2073,12 @@
           "lib/netstandard2.0/Flurl.dll": {}
         }
       },
-      "Flurl.Http/2.4.1": {
+      "Flurl.Http/2.4.2": {
         "type": "package",
         "dependencies": {
-          "Flurl": "2.8.1",
-          "Newtonsoft.Json": "11.0.2",
-          "System.Text.Encoding.CodePages": "4.4.0"
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Flurl.Http.dll": {}
@@ -2351,7 +2351,7 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2580,7 +2580,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.1": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -2731,11 +2731,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Flurl.Http": "2.4.1",
+          "Flurl.Http": "2.4.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.2.4",
           "MvvmLightLibsStd10": "5.4.1.1",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "4.0.0.425677"
         },
         "compile": {
           "bin/placeholder/Project.dll": {}
@@ -2747,14 +2747,14 @@
     }
   },
   "libraries": {
-    "Flurl/2.8.1": {
-      "sha512": "RI3e1vOfhtZJNSsrA/5aEAenC60Dmf/8ODXdSOJ9kHwS+EjXGMjLt8AZKhCPqKSaykUIV/M3FLBsf9vQgLxTxw==",
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
       "type": "package",
-      "path": "flurl/2.8.1",
+      "path": "flurl/2.8.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "flurl.2.8.1.nupkg.sha512",
+        "flurl.2.8.2.nupkg.sha512",
         "flurl.nuspec",
         "lib/net40/Flurl.dll",
         "lib/net40/Flurl.xml",
@@ -2766,14 +2766,14 @@
         "lib/netstandard2.0/Flurl.xml"
       ]
     },
-    "Flurl.Http/2.4.1": {
-      "sha512": "Pt1ErAK5ABGSiWEBFhbV1anEu11ET5yzvD5LkaWZnr7ezVQbcf7lCN++3lGNszth4z6rPFvUx+potvVY6OZSjw==",
+    "Flurl.Http/2.4.2": {
+      "sha512": "VfSJ0DKzh6kf2IOZGG1/JpHajhtqzGp1t+M1QSyFGse7c4Gg1DpH80LTveYea2hV1BEtvPPEp6A4iZ78D8bxGQ==",
       "type": "package",
-      "path": "flurl.http/2.4.1",
+      "path": "flurl.http/2.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "flurl.http.2.4.1.nupkg.sha512",
+        "flurl.http.2.4.2.nupkg.sha512",
         "flurl.http.nuspec",
         "lib/net45/Flurl.Http.dll",
         "lib/net45/Flurl.Http.xml",
@@ -3094,10 +3094,10 @@
         "mvvmlightlibsstd10.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3120,7 +3120,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
@@ -4211,10 +4211,10 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/4.4.0": {
-      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
       "type": "package",
-      "path": "system.text.encoding.codepages/4.4.0",
+      "path": "system.text.encoding.codepages/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4232,19 +4232,6 @@
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
-        "ref/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "ref/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
@@ -4253,7 +4240,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.4.0.nupkg.sha512",
+        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4527,5 +4514,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.0.0.425677 to 3.1.0.697729. Reference the package directly from the project to select a different version. \r\n Project.iOS -> Project -> Xamarin.Forms (>= 4.0.0.425677) \r\n Project.iOS -> Xamarin.Forms (>= 3.1.0.697729)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

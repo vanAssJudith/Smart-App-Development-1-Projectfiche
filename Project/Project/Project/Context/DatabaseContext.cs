@@ -8,7 +8,8 @@ namespace Herhalingsoefening.Context
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Movie> WatchedMovies { get; set; }
+        public DbSet<Movie> WishlistMovies { get; set; }
         private string _databasePath;
 
         public DatabaseContext(string databasePath)

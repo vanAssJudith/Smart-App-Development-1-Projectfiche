@@ -12,3 +12,7 @@ C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netc
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.AssemblyInfoInputs.cache
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.AssemblyInfo.cs
 C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.csproj.CopyComplete
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\bin\Debug\netcoreapp2.1\Project.Tests.pdb
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\XamlC.stamp
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.dll
+C:\SAD\Smart-App-Development-1-Projectfiche\Project\Project.Tests\obj\Debug\netcoreapp2.1\Project.Tests.pdb

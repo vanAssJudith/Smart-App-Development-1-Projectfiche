@@ -4,13 +4,16 @@
              x:Class="Project.Views.SearchPage"
              Title="Search">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        
+       
+
+        <StackLayout BindingContext="{Binding Movie}" x:Name="Movie">
+            <Label Text="{Binding Title}"/>
+
             <!--<SearchBar 
                 x:Name="SearchBar"
                 Placeholder="Search"/>-->
         </StackLayout>
+            
     </ContentPage.Content>
 </ContentPage>

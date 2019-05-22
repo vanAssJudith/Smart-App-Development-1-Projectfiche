@@ -7,15 +7,14 @@
         <ToolbarItem Icon="share.png" Command="{Binding Share}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout>
-                <!--Restaurant Details-->
-                <Image Source="{Binding SelectedMovie.BackdropPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" />
-                <Label Text="{Binding SelectedMovie.Title}" HorizontalOptions="CenterAndExpand"/>
-                <Label Text="{Binding SelectedMovie.Overview}" HorizontalOptions="CenterAndExpand"/>
-                <Label Text="{Binding SelectedMovie.VoteAverage}" HorizontalOptions="CenterAndExpand"/>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Image HeightRequest="200" Source="{Binding SelectedMovie.BackdropPath, StringFormat='https://image.tmdb.org/t/p/w154/{0}'}" Aspect="AspectFit"/>
+                <Label Margin="20,0" Text="{Binding SelectedMovie.Title}" HorizontalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold"/>
+                <Label Margin="20,0" Text="{Binding SelectedMovie.Overview}" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                <Button Text="Kopieer de link" WidthRequest="20" HeightRequest="20" Command="{Binding ClipboardText}"/>
                 <Button Text="Bekijk de trailer" Command="{Binding WatchVideo}"></Button>
-            </StackLayout>
-        </StackLayout>
+             </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

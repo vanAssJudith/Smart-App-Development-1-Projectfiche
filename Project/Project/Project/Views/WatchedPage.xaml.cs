@@ -15,7 +15,7 @@ namespace Project.Views
 		public WatchedPage ()
 		{
 			InitializeComponent ();
-            BindingContext = App.Locator.WatchedPageViewModel;
+            //BindingContext = App.Locator.WatchedPageViewModel;
         }
 	}
 }

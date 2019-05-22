@@ -10,30 +10,19 @@
         <ContentPage Title="Menu">
             <ContentPage.Content>
                 <StackLayout>
-                    <ListView x:Name="listView" x:FieldModifier="public">
-                        <ListView.ItemsSource>
-                            <x:Array Type="{x:Type local:Profile}">
-                                <local:Profile Title="Home" IconSource="home.png" TargetType="{x:Type view:PopularMoviesPage}" />
-                                <local:Profile Title="Wish List" IconSource="toWatch.png" TargetType="{x:Type view:WishlistPage}"/>
-                                <local:Profile Title="Watched" IconSource="eye.png" TargetType="{x:Type view:WatchedPage}"/>
-                            </x:Array>
-                        </ListView.ItemsSource>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid Padding="5,10">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="30"/>
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
-                                        <Image Source="{Binding IconSource}" />
-                                        <Label Grid.Column="1" Text="{Binding Title}" />
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+                        <ImageButton Grid.Row="1" Grid.Column="0" Source="toWatch.png" Command="{Binding WishlistCommand}" BackgroundColor="Transparent"/>
+                        <Label Grid.Row="1" VerticalOptions="Center" Grid.Column="1" Text="Wishlist"/>
+                    </Grid>
                 </StackLayout>
+
             </ContentPage.Content>
         </ContentPage>
     </MasterDetailPage.Master>

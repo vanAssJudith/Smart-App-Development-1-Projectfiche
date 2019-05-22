@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Herhalingsoefening.Repositories;
 using Project.Models;
 using Project.Services;
 using System;
@@ -14,12 +15,14 @@ namespace Project.ViewModels
 
         private readonly IMovieAppService _appService;
         private ICustomNavigation _navigation;
+        private readonly ILocalDatabaseRepository _localDb;
 
-        public PopularMoviesPageViewModel(IMovieAppService appService, ICustomNavigation navigation)
+        public PopularMoviesPageViewModel(IMovieAppService appService, ICustomNavigation navigation,ILocalDatabaseRepository localDb)
         {
             _appService = appService;
             LoadData().GetAwaiter();
             _navigation = navigation;
+            _localDb = localDb;
         }
 
         public async Task LoadData()
@@ -82,24 +85,24 @@ namespace Project.ViewModels
             }
         }
 
-        public RelayCommand AddWatched
-        {
-            get
-            {
-                return new RelayCommand(() =>
-                {
-                    
-                });
-            }
-        }
+        //public RelayCommand<Movie> AddWatched
+        //{
+        //    get
+        //    {
+        //        return new RelayCommand<Movie>(async (movie) =>
+        //        {
+        //            await _localDb.PostWatchedMovieAsync(movie);
+        //        });
+        //    }
+        //}
 
-        public RelayCommand AddWishlist
+        public RelayCommand<Movie> AddWishlist
         {
             get
             {
-                return new RelayCommand(() =>
+                return new RelayCommand<Movie>(async (movie) =>
                 {
-                    
+                    await _localDb.PostWishlistMovieAsync(movie);
                 });
             }
         }

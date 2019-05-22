@@ -35,16 +35,15 @@ namespace Project.Services
             return await _movieRepository.GetLatestMovies();
         }
         
-        public void ShareContent(string Title)
+        public void ShareContent(string url)
         {
-            _shareRepository.ShareText(Title);
+            _shareRepository.ShareUrl(url);
         }
 
         public async Task<List<Video>> GetVideos(string movieId)
         {
             return await _movieRepository.GetVideos(movieId);
         }
-
 
     }
 }

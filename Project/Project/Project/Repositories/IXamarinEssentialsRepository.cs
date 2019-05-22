@@ -6,6 +6,6 @@ namespace Project.Repositories
     public interface IXamarinEssentialsRepository
     {
         Task OpenBrowser(string uri);
-        Task ShareText(string text);
+        Task ShareUrl(string url);
     }
 }

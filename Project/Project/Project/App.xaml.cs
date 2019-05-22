@@ -29,12 +29,12 @@ namespace Project
             var nav = new NavigationService();
             nav.Configure(ServiceLocator.Mainpage, typeof(MainPage));
             nav.Configure(ServiceLocator.PopularMoviesPage, typeof(PopularMoviesPage));
-            nav.Configure(ServiceLocator.PopularMoviesPage, typeof(BestRatedMoviesPage));
-            nav.Configure(ServiceLocator.PopularMoviesPage, typeof(LatestMoviesPage));
+            nav.Configure(ServiceLocator.BestRatedMoviesPage, typeof(BestRatedMoviesPage));
+            nav.Configure(ServiceLocator.LatestMoviesPage, typeof(LatestMoviesPage));
             nav.Configure(ServiceLocator.InfoPage, typeof(InfoPage));
             nav.Configure(ServiceLocator.SearchPage, typeof(SearchPage));
-            nav.Configure(ServiceLocator.SearchPage, typeof(WatchedPage));
-            nav.Configure(ServiceLocator.SearchPage, typeof(WishlistPage));
+            nav.Configure(ServiceLocator.WatchedPage, typeof(WatchedPage));
+            nav.Configure(ServiceLocator.WishlistPage, typeof(WishlistPage));
 
             SimpleIoc.Default.Register<ICustomNavigation>(() => nav);
 

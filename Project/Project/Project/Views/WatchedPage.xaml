@@ -4,23 +4,16 @@
              x:Class="Project.Views.WatchedPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding WatchedMovies}" SelectedItem="{Binding SelectedMovie}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <!--<ListView ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent" SelectedItem="{Binding SelectedMovie}">
+            <ListView x:Name="MovieList" ItemsSource="{Binding Movies}" RowHeight="150" SeparatorColor="Transparent">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame BackgroundColor="WhiteSmoke" Margin="6" Padding="6,0">
-                                <Grid>
+                                <Grid x:Name="Movie">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="75"/>
+                                        <ColumnDefinition Width="100"/>
                                         <ColumnDefinition Width="200"/>
-                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="20"/>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="50"/>
@@ -30,17 +23,13 @@
                                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Grid.Column="1">
                                         <Label HorizontalTextAlignment="Start" Text="{Binding Title}" TextColor="Black" VerticalOptions="Center" FontSize="16"/>
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal" Grid.Row="1" Spacing="0" Grid.Column="1">
-                                        <Label Text="{Binding VoteAverage}" FontAttributes="Bold" TextColor="Gray"></Label>
-                                    </StackLayout>
-                                    <Button Command="{Binding RemoveWatched}" Grid.Column="2" Image="delete.png" BackgroundColor="Transparent"/>
-                                    <Button Text="Opslaan" Command="{Binding SaveCommand}" Grid.Column="2" Grid.Row="1" Image="toWatch.png"></Button>
+                                    <ImageButton CommandParameter="{Binding Source={x:Reference Movie}, Path=BindingContext}" BindingContext="{Binding Source={x:Reference MovieList}, Path=BindingContext}" Command="{Binding RemoveWatched}"  Grid.Column="2" Source="delete.png" BackgroundColor="Transparent"/>
                                 </Grid>
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>-->
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -28,19 +28,18 @@ namespace Project.Tests
             Application.Current = null;
         }
 
-        //[TestMethod]
-        //public void Navigate_PopularMoviesPage_To_SearchPage()
-        //{
-        //    //Arrange
-        //    var navigationService = SimpleIoc.Default.GetInstance<ICustomNavigation>();
-        //    var firstPageViewModel = new PopularMoviesPageViewModel(navigationService);
+        [TestMethod]
+        public void Navigate_MainPage_To_WishlistPage()
+        {
+            //Arrange
+            var navigationService = SimpleIoc.Default.GetInstance<ICustomNavigation>();
+            var mainPageViewModel = new MainPageViewModel(navigationService);
 
-        //    //Act
-        //    firstPageViewModel.SearchPage.Execute(null);
+            //Act
+            mainPageViewModel.WishlistCommand.Execute(null);
 
-        //    //Assert
-        //    Assert.AreEqual<string>(ServiceLocator.SearchPage, navigationService.CurrentPageKey);
-        //}
-    //}
+            //Assert
+            Assert.AreEqual<string>(ServiceLocator.WishlistPage, navigationService.CurrentPageKey);
+        }
     }
 }

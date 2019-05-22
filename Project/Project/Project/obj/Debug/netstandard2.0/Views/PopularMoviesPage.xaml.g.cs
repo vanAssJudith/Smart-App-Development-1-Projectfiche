@@ -16,15 +16,19 @@ namespace Project.Views {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\PopularMoviesPage.xaml")]
     public partial class PopularMoviesPage : global::Xamarin.Forms.TabbedPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView MovieList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Project.Views.BestRatedMoviesPage BestRatedMoviesPage;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Project.Views.LatestMoviesPage LatestMoviesPage;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PopularMoviesPage));
+            MovieList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MovieList");
             BestRatedMoviesPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Project.Views.BestRatedMoviesPage>(this, "BestRatedMoviesPage");
             LatestMoviesPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Project.Views.LatestMoviesPage>(this, "LatestMoviesPage");
         }

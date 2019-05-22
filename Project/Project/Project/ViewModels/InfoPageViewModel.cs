@@ -54,22 +54,20 @@ namespace Project.ViewModels
         {
             get
             {
-                return new RelayCommand(() =>
+                return new RelayCommand(async() =>
                 {
-                    _appService.ShareContent(Title);
+                    List<Video> videos = await _movieRepository.GetVideos(SelectedMovie.Id);
+                    
+                    Video video = videos.FirstOrDefault();
+                    
+                    if (video == null)
+                        return;
+
+                    _appService.ShareContent("https://www.youtube.com/watch?v=" + video.Key);
                 });
             }
         }
-
-        private string _videoId;
-
-        public string VideoId
-        {
-            get { return _videoId; }
-            set { _videoId = value; }
-        }
-
-
+        
         public RelayCommand WatchVideo
         {
             get
@@ -78,18 +76,30 @@ namespace Project.ViewModels
                 {
                     List<Video> videos = await _movieRepository.GetVideos(SelectedMovie.Id);
 
-                    //neem eerste video uit lijst
+                    // de eerste video uit de lijst
                     Video video = videos.FirstOrDefault();
 
-                    //kijk of er een video in zit --> indien niet geen melding en gewoon niks doen :'(
+                    //checken als video al in de lijst zit
                     if (video == null)
                         return;
-                    //film openen in browers???
+                    //film openen in browers
                     await _xamarinEssentials.OpenBrowser("https://www.youtube.com/watch?v=" + video.Key);
                        
                     
                 });
             }
         }
+
+        public RelayCommand ClipboardText
+        {
+            get
+            {
+                return new RelayCommand(async () =>
+                {
+                    await Clipboard.SetTextAsync(Title);
+                });
+            }
+        }
+        
     }
 }
